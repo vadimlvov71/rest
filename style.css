@@ -1,3 +1,15 @@
+h1{
+	font-size: 1.1rem;
+	font-style: italic;
+}
+h2{
+	font-size: 1rem;
+	font-style: italic;
+}
+h3{
+	font-size: .9rem;
+	font-style: italic;
+}
 section{
 	clear: both;
 }
@@ -23,7 +35,16 @@ section{
 	border-bottom: 1px solid #ddd;
 }
 .img{
-	margin-right: 12px;
+	/*background: #fff;*/
+}
+.img-article{
+  margin-right:12px;
+}
+.img-small{
+	background: #fff;
+}
+.italic{
+
 }
 .item_rest{
 	background: #fff;
@@ -32,6 +53,16 @@ section{
 	margin:5px 0;
 	padding: 5px 6px 5px 26px;
 	opacity:0.8;
+	font-size: 1rem;
+	transition: all .2s ease-in-out;
+}
+.item_rest:hover{
+	opacity:1;
+	padding: 5px 6px 5px 31px;
+	/*font-size: 1.1rem;*/
+	transform: scale(1.1)
+	/*-webkit-transition: font-size 1s,  -webkit-transform 1s;
+    transition: font-size 1s, padding 1s, transform 1s;*/
 }
 .hotel_image {
     display: block;
@@ -48,22 +79,29 @@ section{
 }
 .hotelHeader{
      text-align:center;
-		text-overflow: ellipsis;
+	text-overflow: ellipsis;
 	  overflow: hidden; 
 	  padding: 6px;  
 	  white-space: nowrap;
 	  font-style: italic;
 }
+.hotelfooter{
+	height: 6px;
+}
 .hotel-section{
 	border: 1px solid #d5d3ca;
     border-radius: 3px;
     background: #f6edd0;
+    transition: all .2s ease-in-out; 
 	/*background: #edf3f933;*/
 }
+
 .hotel-section:hover{
 	background:#f6d162;
-	/*background: #0056b3;
-	color:#fff;*/
+	
+	transform: scale(1.1)
+	/*-webkit-transition: background 1s, width 1s, -webkit-transform 1s;
+    transition: background 1s, width 1s, transform 1s;*/
 }
 .hotel-section-menu{
 	border: 1px solid #d5d3ca;
@@ -128,7 +166,8 @@ section{
 	margin:4px;
 }
 .nav-link {
-	/*background: #f6edd0;*/
+	background: #f6edd0;
+	border: 1px solid #ccc!important;
 }
 .padding-section{
 	padding:8px;

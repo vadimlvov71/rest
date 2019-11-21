@@ -52,6 +52,21 @@ function itemsDom($item, $path, $type){?>
 	 </div>
 <?php
 }
+function smallDom($item, $path){?>
+	<div class="col-sm-12">
+		<a href="<?php echo($path)?>/dom<?php //echo($item["cat_translit"])?>/<?php //echo($item["goods_translit"]."_".$item["id"])?>">
+			<div class="hotel-section marginSection shadow">	
+				<div class="hotelHeader"><?php echo($item["name"])?></div>
+				<div class="img">
+					<img align="center" width="160" class="hotel_image img-fluid-height" src="<?php echo($path)?>/web/img/<?php echo($item["img"])?>" alt="">
+				</div>
+				<div class="hotelfooter">&nbsp;</div>
+				
+			</div>
+		</a>
+	 </div>
+<?php
+}
 function article($item, $path, $type){
 	if($type == "article"){
 		$href = "article";
